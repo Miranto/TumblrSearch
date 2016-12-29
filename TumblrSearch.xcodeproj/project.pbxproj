@@ -11,8 +11,7 @@
 		57BCA8BC896676740557814C /* libPods-TumblrSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C5199DBB0D54393A209874 /* libPods-TumblrSearchTests.a */; };
 		61A63E451E1508380039DB0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A63E441E1508380039DB0D /* main.m */; };
 		61A63E481E1508380039DB0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A63E471E1508380039DB0D /* AppDelegate.m */; };
-		61A63E4B1E1508380039DB0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A63E4A1E1508380039DB0D /* ViewController.m */; };
-		61A63E4E1E1508380039DB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A63E4C1E1508380039DB0D /* Main.storyboard */; };
+		61A63E4B1E1508380039DB0D /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A63E4A1E1508380039DB0D /* SearchViewController.m */; };
 		61A63E501E1508380039DB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 61A63E4F1E1508380039DB0D /* Assets.xcassets */; };
 		61A63E531E1508380039DB0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A63E511E1508380039DB0D /* LaunchScreen.storyboard */; };
 		61A63E5E1E1508380039DB0D /* TumblrSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A63E5D1E1508380039DB0D /* TumblrSearchTests.m */; };
@@ -43,9 +42,8 @@
 		61A63E441E1508380039DB0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61A63E461E1508380039DB0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61A63E471E1508380039DB0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		61A63E491E1508380039DB0D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		61A63E4A1E1508380039DB0D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		61A63E4D1E1508380039DB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61A63E491E1508380039DB0D /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		61A63E4A1E1508380039DB0D /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		61A63E4F1E1508380039DB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61A63E521E1508380039DB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61A63E541E1508380039DB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,9 +118,8 @@
 			children = (
 				61A63E461E1508380039DB0D /* AppDelegate.h */,
 				61A63E471E1508380039DB0D /* AppDelegate.m */,
-				61A63E491E1508380039DB0D /* ViewController.h */,
-				61A63E4A1E1508380039DB0D /* ViewController.m */,
-				61A63E4C1E1508380039DB0D /* Main.storyboard */,
+				61A63E491E1508380039DB0D /* SearchViewController.h */,
+				61A63E4A1E1508380039DB0D /* SearchViewController.m */,
 				61A63E4F1E1508380039DB0D /* Assets.xcassets */,
 				61A63E511E1508380039DB0D /* LaunchScreen.storyboard */,
 				61A63E541E1508380039DB0D /* Info.plist */,
@@ -297,7 +294,6 @@
 			files = (
 				61A63E531E1508380039DB0D /* LaunchScreen.storyboard in Resources */,
 				61A63E501E1508380039DB0D /* Assets.xcassets in Resources */,
-				61A63E4E1E1508380039DB0D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,7 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61A63E4B1E1508380039DB0D /* ViewController.m in Sources */,
+				61A63E4B1E1508380039DB0D /* SearchViewController.m in Sources */,
 				61A63E481E1508380039DB0D /* AppDelegate.m in Sources */,
 				61A63E451E1508380039DB0D /* main.m in Sources */,
 			);
@@ -498,14 +494,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		61A63E4C1E1508380039DB0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				61A63E4D1E1508380039DB0D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		61A63E511E1508380039DB0D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -700,6 +688,7 @@
 				61A63E6F1E1508380039DB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61A63E701E1508380039DB0D /* Build configuration list for PBXNativeTarget "TumblrSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -708,6 +697,7 @@
 				61A63E721E1508380039DB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61A63E731E1508380039DB0D /* Build configuration list for PBXNativeTarget "TumblrSearchUITests" */ = {
 			isa = XCConfigurationList;
@@ -716,6 +706,7 @@
 				61A63E751E1508380039DB0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
