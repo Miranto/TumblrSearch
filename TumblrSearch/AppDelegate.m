@@ -19,9 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
   self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-  SearchViewController *viewController = [[SearchViewController alloc] init];
+  SearchViewController *rootViewController = [[SearchViewController alloc] init];
   
-  self.window.rootViewController = viewController;
+  UINavigationController *navController = [[UINavigationController alloc]
+                                           initWithRootViewController:rootViewController];
+  
+  self.window.rootViewController = navController;
   [self.window makeKeyAndVisible];
   
   return YES;
